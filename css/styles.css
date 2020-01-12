@@ -1,0 +1,72 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  background: #f2f2f2;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  color: #0165E7;
+}
+
+.inner {
+  padding: .5em;
+  border-radius: .3em;
+  width: 200px;
+  -webkit-box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.04), -7px -7px 5px rgba(255, 255, 255, 0.8);
+          box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.04), -7px -7px 5px rgba(255, 255, 255, 0.8);
+  border: 2px solid #ebebeb;
+}
+
+.inner input[type=checkbox] {
+  display: none;
+  pointer-events: none;
+}
+
+.inner input[type=checkbox] + label {
+  cursor: pointer;
+  font-size: .8em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 3fr;
+      grid-template-columns: auto 3fr;
+}
+
+.inner input[type=checkbox] + label svg {
+  width: 2em;
+  stroke: #007ce2;
+  stroke-width: 5;
+  fill: white;
+}
+
+.inner input[type=checkbox] + label svg .box {
+  stroke-dasharray: 350;
+  stroke-dashoffset: 0;
+  fill: white;
+}
+
+.inner input[type=checkbox] + label svg .check {
+  stroke-dasharray: 80;
+  stroke-dashoffset: 80;
+  fill: none;
+  -webkit-transition: stroke-dashoffset .3s linear;
+  transition: stroke-dashoffset .3s linear;
+}
+
+.inner input[type=checkbox] + label span {
+  padding-top: .3em;
+  margin-left: .3em;
+}
+
+.inner input[type=checkbox]:checked + label .check {
+  stroke-dashoffset: 0;
+  -webkit-transition: stroke-dashoffset .3s linear;
+  transition: stroke-dashoffset .3s linear;
+}
+/*# sourceMappingURL=styles.css.map */
