@@ -6,7 +6,7 @@ body {
     height: 100vh;
     display: grid;
     place-content: center;
-    background: #f2f2f2;
+    background: #55b9f3;
     font-family: 'Montserrat';
     font-weight: bold;
     color: #0165E7;
@@ -16,9 +16,10 @@ body {
     padding: .5em;
     border-radius: .3em;
     width: 200px;
-    box-shadow: 7px 7px 5px rgba(0,0,0, 0.04),
-    -7px -7px 5px rgba(255,255,255, 0.8);
-    border: 2px solid rgb(235, 235, 235);
+    border: 1px solid #efefef;
+    background: #55b9f3;
+    box-shadow:  23px 23px 39px #489dcf, 
+                 -23px -23px 39px #62d5ff;
 
     input[type=checkbox] {
         display: none;
@@ -50,8 +51,9 @@ body {
             }
 
             span {
-                padding-top: .3em;
+                padding-top: .1em;
                 margin-left: .3em;
+                font-size: 1.5em;
             }
         }
         &:checked + label {
